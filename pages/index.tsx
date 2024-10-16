@@ -38,10 +38,12 @@ export default function Home() {
       params: { id: 'test' },
       query: { example: 'example' }
     });
+    // This is a ts linting error on .mutate
     await tsr.example.deleteNoBody.mutate({
       params: { id: 'test' },
       query: { example: 'example' }
     })
+    // This is a ts linting error on .mutation
     await queryClient.example.deleteNoBody.mutation({
       params: { id: 'test' },
       query: { example: 'example' }
